@@ -1,0 +1,21 @@
+.example-card {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.example-header-image {
+  background-image: url('https://placeimg.com/100/100/people');
+  background-size: cover;
+}
+
+img {
+  max-width: none;
+}
+
+.loading {
+  text-align: center;
+
+  mat-spinner {
+    display: inline-block;
+  }
+}

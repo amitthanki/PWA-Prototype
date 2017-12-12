@@ -1,0 +1,42 @@
+
+.center {text-align: center;}
+.max-width {max-width: 700px; margin-left:auto; margin-right:auto;}
+.max-width-large {max-width: 900px; margin-left:auto; margin-right:auto;}
+
+.btn-wrap {margin:20px 0;
+
+	&.center {text-align: center;}
+	&.right {text-align: right;}
+	&.left {text-align: left;}
+
+
+}
+
+
+.wrapper {
+
+	button.mat-mini-fab {background-color: $primary; color:#fff; font-size: 20px; box-shadow: none; width:34px; height:34px;
+
+		&:hover {color:#fff;}
+
+		&:before {line-height: 34px;}
+
+		&.mat-accent {background-color: #fff; color:$primary;}
+
+	}
+}
+
+p.header {font-size: 18px; font-weight: bold;}
+
+.pointer {cursor:pointer;}
+
+.img-cover {background-position: center center; background-size: cover;}
+
+.ellipsis {white-space: nowrap; overflow: hidden; text-overflow: ellipsis;}
+
+.white-bg {background-color: #fff;}
+
+.grey-bg {background-color: $grey1;}
+
+.loader-centered {margin:0 auto;}
+

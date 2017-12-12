@@ -1,0 +1,30 @@
+<section class="page-wrap">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <mat-card class="example-card" *ngIf="post$ | async; let post; else loading">
+          <mat-card-header>
+            <div mat-card-avatar class="example-header-image"></div>
+            <mat-card-title>{{ post.title.rendered }}</mat-card-title>
+            <mat-card-subtitle>Author Name</mat-card-subtitle>
+          </mat-card-header>
+          <img mat-card-image src="https://placeimg.com/1200/600/any" alt="Photo of a Shiba Inu">
+          <mat-card-content>
+            <h1>{{ post.title.rendered }}</h1>
+            <p>Shoreditch umami vinyl swag pop-up readymade gluten-free try-hard raw denim Blue Bottle selvage slow-carb plaid Marfa you probably haven't heard of them heirloom Godard tousled Pitchfork Brooklyn narwhal kogi keytar shabby chic DIY vegan hoodie ugh meggings Carles mumblecore authentic before they sold out locavore Portland literally crucifix biodiesel bitters mustache semiotics direct trade  gentrify hashtag art party synth disrupt farm-to-table drinking vinegar retro meh fixie bicycle rights brunch tofu.</p>
+            <p>kogi +1 scenester asymmetrical flannel Tumblr raw denim Pitchfork mustache fap polaroid cardigan crucifix synth trust fund lo-fi try-hard vinyl chambray tattooed pickled readymade Neutra narwhal locavore Bushwick plaid art party direct trade  brunch VHS distillery mixtape typewriter Thundercats you probably haven't heard of them aesthetic squid twee swag put a bird on it fixie gastropub shabby chic sustainable American Apparel artisan hashtag four loko XOXO craft beer whatever Helvetica drinking vinegar ugh literally bicycle rights ennui Truffaut Austin tofu PBR&B keffiyeh letterpress street art ethical iPhone yr messenger bag vegan retro banh mi hoodie YOLO authentic next level skateboard Intelligentsia Tonx kitsch Brooklyn quinoa Carles fashion</p>
+            <p>church-key 8-bit drinking vinegar Cosby sweater distillery Godard lomo bespoke next level seitan messenger bag direct trade  twee occupy gluten-free Marfa hashtag letterpress slow-carb synth Pinterest photo booth mlkshk heirloom Williamsburg tattooed fixie scenester pork belly kale chips narwhal sriracha bitters Austin skateboard shabby chic master cleanse Wes Anderson fap Vice try-hard ethical trust fund raw denim McSweeney's Pitchfork vegan Thundercats mixtape sustainable typewriter vinyl small batch deep v umami beard kitsch jean shorts Bushwick XOXO keytar cred American Apparel mumblecore iPhone retro freegan Helvetica hella Brooklyn Kickstarter irony Portland roof party crucifix dreamcatcher before they sold out locavore pug street art YOLO meggings chambray organic gentrify flannel selvage Blue Bottle PBR Intelligentsia semiotics bicycle rights Tonx cornhole viral biodiesel Tumblr yr selfies High Life chillwave asymmetrical authentic disrupt squid stumptown wayfarers VHS Odd Future actually kogi wolf Carles ugh fanny pack flexitarian forage 3 wolf moon single-origin coffee plaid Truffaut cliche butcher Neutra quinoa ennui blog lo-fi Shoreditch put a bird on it keffiyeh pour-over 90's post-ironic pop-up tousled craft beer hoodie farm-to-table salvia you probably haven't heard of them art party literally PBR&B brunch gastropub Schlitz leggings chia Etsy pickled +1 DIY sartorial mustache Echo Park Banksy cray banh mi four loko swag polaroid artisan banjo normcore whatever meh food truck readymade fingerstache fashion axe aesthetic tote bag cardigan tofu paleo</p>
+          </mat-card-content>
+
+        
+        </mat-card>
+        <ng-template #loading>
+          <div class="loading">
+            <mat-spinner></mat-spinner>          
+          </div>
+        </ng-template>
+      </div>
+      
+    </div>
+  </div>
+</section>

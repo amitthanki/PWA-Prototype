@@ -1,0 +1,43 @@
+@import 'core/variables';
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: $grey3;
+  box-shadow: 0 3px 5px rgba(black, 0.5);
+  z-index: 800;
+
+}
+
+.header {
+  height: $mobileHeaderHeight;
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100px;
+  transform: translateY(-50%);
+}
+
+.menu {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  color: $grey1;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.dropdown {
+  a {
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
