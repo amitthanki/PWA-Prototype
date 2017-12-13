@@ -10,8 +10,8 @@ export interface State {
 }
 
 export const initialState: State = {
-    posts: [],
-    post: generateMockPost()
+    posts: null,
+    post: null
 }
 
 

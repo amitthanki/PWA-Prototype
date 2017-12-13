@@ -17,7 +17,6 @@ export class PostsEffects {
     getUsers$: Observable<Action> = this.actions$
       // we need to know which action this gets implemented on
       .ofType(PostActions.GET_POSTS)
-      .delay(10000)
       // map the action payload if it exists
       // .map(action => action.payload)
       // here's where we pass the payload to some service
@@ -30,7 +29,6 @@ export class PostsEffects {
     getUser$: Observable<Action> = this.actions$
       // we need to know which action this gets implemented on
       .ofType(PostActions.GET_POST)
-      .delay(20000)
       // map the action payload if it exists
       .map((action: PostActions.GetPost) => action.payload)
       // here's where we pass the payload to some service

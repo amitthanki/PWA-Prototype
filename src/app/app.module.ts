@@ -1,6 +1,8 @@
 import { PostService } from './services/post.service';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 import { UserService } from './services/user.service';
 import { UserEffects } from './store/effects/user.effects';
 import { reducers } from './store/index';
@@ -26,6 +28,7 @@ import { PostsEffects } from './posts/effects/posts';
     BrowserModule,
     CoreModule,
     AppRoutingModule,
+    ServiceWorkerModule.register('/ngsw-worker.js', {enabled: environment.production}),
     StoreModule.forRoot(reducers),
     EffectsModule.forRoot([UserEffects,PostsEffects]),
     StoreRouterConnectingModule,
