@@ -8,7 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 
 const routes: Routes = [
   { path: '',  component: HomeComponent, data: { class : 'page-home', name: 'home'  } },
-  { path: 'posts', loadChildren: './posts/posts.module#PostsModule' },
+  { path: 'movies', loadChildren: './posts/posts.module#PostsModule' },
   { path: '**',
     redirectTo: '/',
     pathMatch: 'full'

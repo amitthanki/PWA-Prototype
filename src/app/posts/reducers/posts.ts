@@ -24,13 +24,14 @@ export function reducer(state: State = initialState, action: posts.Actions) {
         case posts.GET_POSTS_SUCCESS:
             return {
                 ...state,
-                posts: action.payload
+                posts: action.payload.results
             };        
             
         case posts.GET_POST:
             return action.payload;
 
         case posts.GET_POST_SUCCESS:
+            console.log(action.payload);
             return {
                 ...state,
                 post: action.payload

@@ -1,3 +1,4 @@
+import { User } from './../../models/user.model';
 import { Store } from '@ngrx/store';
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 import * as fromRoot from './../../store/index';
@@ -10,7 +11,6 @@ import * as postsAction from './../actions/posts';
   templateUrl: './posts.component.html',
   styleUrls: ['./posts.component.scss'],
   changeDetection: ChangeDetectionStrategy.OnPush
-
 })
 export class PostsComponent implements OnInit {
 

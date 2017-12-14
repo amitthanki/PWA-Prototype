@@ -18,7 +18,7 @@ export class PostsEffects {
       // we need to know which action this gets implemented on
       .ofType(PostActions.GET_POSTS)
       // map the action payload if it exists
-      // .map(action => action.payload)
+      // .map((action: PostActions.GetPosts) => action)
       // here's where we pass the payload to some service
       .switchMap(() => this.post.getPosts())
       // finally we take the result and fire a success action to the store

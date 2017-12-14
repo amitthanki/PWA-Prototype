@@ -19,11 +19,12 @@ import { RouterModule } from '@angular/router';
     HttpClientModule
   ],
   exports: [
-    HeaderComponent
-  ],
+    HeaderComponent,
+    
+  ],  
   declarations: [
     HomeComponent,
     HeaderComponent
-  ],
+  ]
 })
 export class CoreModule { }

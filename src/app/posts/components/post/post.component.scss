@@ -8,6 +8,10 @@
   background-size: cover;
 }
 
+h3 {
+  color: #fff;
+}
+
 img {
   max-width: none;
 }
@@ -15,5 +19,7 @@ img {
 .loading {
   text-align: center;
 
-  mat-spinner {display: inline-block;}
+  mat-spinner {
+    display: inline-block;
+  }
 }

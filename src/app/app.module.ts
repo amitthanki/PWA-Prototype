@@ -22,7 +22,7 @@ import { PostsEffects } from './posts/effects/posts';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
   ],
   imports: [
     BrowserModule,

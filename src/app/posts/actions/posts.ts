@@ -15,7 +15,7 @@ export class GetPosts implements Action {
 export class GetPostsSuccess implements Action {
   readonly type = GET_POSTS_SUCCESS;
 
-  constructor(public payload: Post[]) {}
+  constructor(public payload: any) {}
 }
 
 export class GetPost implements Action {

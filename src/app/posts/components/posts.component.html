@@ -1,22 +1,25 @@
 <section class="page-wrap">
   <div class="container">
 
+    <div class="row">
+      <div class="col-sm-12">
+        <h1>Most Popular Movies</h1>
+      </div>
+    </div>
+
     <div class="row" *ngIf="(posts$ | async); let posts; else loading">
-      <div class="col-md-6" *ngFor="let post of posts">
+      <div class="col-md-4" *ngFor="let post of posts">
         <mat-card class="example-card">
           <mat-card-header>
-            <div mat-card-avatar class="example-header-image"></div>
-            <mat-card-title>{{ post.title.rendered }}</mat-card-title>
-            <mat-card-subtitle>Authors Name</mat-card-subtitle>
+            <mat-card-title>{{ post.title }}</mat-card-title>
+            <mat-card-subtitle>{{ post.release_date | date :'mediumDate' }}</mat-card-subtitle>
           </mat-card-header>
-          <img mat-card-image src="https://placeimg.com/800/400/any" alt="Photo of a Shiba Inu">
+          <img mat-card-image src="https://image.tmdb.org/t/p/w500/{{post.poster_path}}" [alt]="post.title">
           <mat-card-content>
-            <p>
-              heirloom organic readymade pork belly 8-bit scenester occupy iPhone Tumblr lomo fingerstache you probably haven't heard of them hella post-ironic 3 wolf moon Truffaut chia squid Godard chambray Intelligentsia PBR&B 90's American Apparel plaid VHS cred Austin.
-            </p>
+            <p>{{ post.overview | truncate:125 }}</p>
           </mat-card-content>
           <mat-card-actions>
-            <a [routerLink]="['/posts', post.id]" mat-button >READ MORE</a>
+            <a [routerLink]="['/movies', post.id]" mat-button >View Details</a>
           </mat-card-actions>
         </mat-card>
       </div>
