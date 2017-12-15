@@ -22,7 +22,7 @@ export class PostsEffects {
       // here's where we pass the payload to some service
       .switchMap(() => this.post.getPosts())
       // finally we take the result and fire a success action to the store
-      .map(results => new PostActions.GetPostsSuccess(results));
+      .map(results => new PostActions.GetPostsSuccess(results.results));
       // todo add a catch here to handle errors
 
     @Effect()

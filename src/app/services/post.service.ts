@@ -6,6 +6,10 @@ import { HttpClient } from '@angular/common/http';
 import { catchError } from 'rxjs/operators';
 import 'rxjs/add/operator/map';
 
+interface MoviewsResponse {
+    results: Post[];
+}
+
 @Injectable()
 export class PostService {
     apiKey = 'e91b70c29eb15d7f3107cfe329ecbc6e';
@@ -14,7 +18,7 @@ export class PostService {
     
 
     getPosts() {
-        return this.http.get(`${this.baseUrl}/discover/movie?sort_by=popularity.desc&api_key=${this.apiKey}`);
+        return this.http.get<MoviewsResponse>(`${this.baseUrl}/discover/movie?sort_by=popularity.desc&api_key=${this.apiKey}`);
     }
 
     getPost(id: any) {

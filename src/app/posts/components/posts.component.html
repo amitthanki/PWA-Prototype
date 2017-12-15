@@ -19,7 +19,7 @@
             <p>{{ post.overview | truncate:125 }}</p>
           </mat-card-content>
           <mat-card-actions>
-            <a [routerLink]="['/movies', post.id]" mat-button >View Details</a>
+            <a [routerLink]="['/movies', post.id]" mat-raised-button color="accent">View Details</a>
           </mat-card-actions>
         </mat-card>
       </div>

@@ -32,7 +32,7 @@
         {
           "name": "api",
           "urls": [
-              "https://www.crewmarketingpartners.com/wp-json/wp/v2/posts"
+              "/movies"
             ],
           "cacheConfig": {
             "strategy": "freshness",
